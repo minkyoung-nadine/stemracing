@@ -1,0 +1,53 @@
+:root {
+  /* Palette */
+  --color-paper: #f4efe6;
+  --color-ink: #0a0a0a;
+  --color-ink-muted: #3d3a36;
+  --color-ink-faint: #6b6560;
+  --color-accent: #d72638;
+  --color-accent-dark: #a81c2b;
+  --color-rule: rgba(10, 10, 10, 0.12);
+  --color-rule-strong: rgba(10, 10, 10, 0.28);
+  --color-surface: #ebe5da;
+  --color-surface-dark: #1a1917;
+  --color-canvas: #121110;
+
+  /* Typography */
+  --font-sans: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  /* Scale */
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-hero: clamp(3rem, 9vw, 6.5rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+
+  /* Layout */
+  --max-width: 1280px;
+  --grid-columns: 12;
+  --header-height: 4.5rem;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+}

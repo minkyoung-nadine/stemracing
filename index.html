@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STEM Racing</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ccffefa (feat: initial website setup)
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/pages/home.css">
+<<<<<<< HEAD
 </head>
 <body>
   <header class="site-header">
@@ -160,5 +164,124 @@
 <body>
   <h1><span>STEM</span> Racing</h1>
 >>>>>>> c1284ee (Initial commit)
+=======
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.svg" alt="Team logo" width="120" height="32">
+        <span class="logo-text" id="team-name-nav">YOUR TEAM</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">홈</a>
+        <a href="team.html" data-i18n="nav.team">팀</a>
+        <a href="sponsors.html" data-i18n="nav.sponsors">스폰서</a>
+        <a href="car.html" data-i18n="nav.car">차량</a>
+        <a href="garage.html" data-i18n="nav.garage">3D</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" data-lang="ko">
+          <span class="lang-toggle__indicator" aria-hidden="true"></span>
+          <button type="button" data-lang-btn="ko" class="is-active">KO</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__title-block">
+          <span class="sticker sticker--accent hero__stamp">BUILD 026</span>
+          <p class="section-num">F1 IN SCHOOLS · 2026</p>
+          <h1><span id="team-name-hero">YOUR</span><br><em>Racing</em></h1>
+          <p class="hero__subtitle" data-i18n="home.hero.subtitle">공기역학, 제조, 포트폴리오를 한 바퀴에 묶은 팀입니다.</p>
+          <div class="hero__meta">
+            <span>WB 160mm</span>
+            <span>MASS 55g</span>
+            <span>BUILD 340h+</span>
+          </div>
+        </div>
+        <aside class="transmission-card">
+          <span class="label" data-i18n="home.transmission.label">TRANSMISSION</span>
+          <dl>
+            <div>
+              <dt data-i18n="home.transmission.event">다음 일정</dt>
+              <dd data-i18n="home.transmission.eventVal">2026 지역 예선</dd>
+            </div>
+            <div>
+              <dt data-i18n="home.transmission.venue">장소</dt>
+              <dd data-i18n="home.transmission.venueVal">TBD</dd>
+            </div>
+            <div>
+              <dt data-i18n="home.transmission.status">상태</dt>
+              <dd data-i18n="home.transmission.statusVal">차량 조립 중</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><span data-i18n="home.stats.speed">최고 속도</span> <span class="value">28.4 m/s</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.mass">질량</span> <span class="value">55 g</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.hours">빌드 시간</span> <span class="value">340 h</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.parts">부품 수</span> <span class="value">47</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.sponsors">스폰서</span> <span class="value">0</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.speed">최고 속도</span> <span class="value">28.4 m/s</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.mass">질량</span> <span class="value">55 g</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.hours">빌드 시간</span> <span class="value">340 h</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.parts">부품 수</span> <span class="value">47</span></span>
+        <span class="marquee-item"><span data-i18n="home.stats.sponsors">스폰서</span> <span class="value">0</span></span>
+      </div>
+    </div>
+
+    <section class="build-log">
+      <div class="container">
+        <header>
+          <h2 data-i18n="home.log.title">빌드 일지</h2>
+          <span class="label">LOG · 003 ENTRIES</span>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <time class="date" data-i18n="home.log.1.date">2026-03-12</time>
+            <p class="entry" data-i18n="home.log.1.entry">프론트 윙 각도 2° 상향 — 터널 데이터 기준 CL +0.04</p>
+            <span class="initials">DE</span>
+          </li>
+          <li class="timeline-item">
+            <time class="date" data-i18n="home.log.2.date">2026-02-28</time>
+            <p class="entry" data-i18n="home.log.2.entry">사이드포드 벽 두께 0.3mm 절삭, 질량 4.2g 절감</p>
+            <span class="initials">MFG</span>
+          </li>
+          <li class="timeline-item">
+            <time class="date" data-i18n="home.log.3.date">2026-01-15</time>
+            <p class="entry" data-i18n="home.log.3.entry">초기 CFD 메시 확정 — 120만 셀, y+ &lt; 30</p>
+            <span class="initials">TP</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-meta" data-i18n="footer.tagline">F1 in Schools · STEM Racing</p>
+        <p class="footer-meta"><span data-i18n="footer.build">BUILD NO.</span> 026 · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <span class="footer-stamp">INSPECTED</span>
+    </div>
+  </footer>
+
+  <script src="assets/data/i18n.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+>>>>>>> ccffefa (feat: initial website setup)
 </body>
 </html>
