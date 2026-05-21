@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" fill="none">
+  <rect width="320" height="400" fill="#ebe5da"/>
+  <rect x="12" y="12" width="296" height="376" stroke="#0a0a0a" stroke-width="1" fill="none"/>
+  <line x1="12" y1="48" x2="308" y2="48" stroke="#0a0a0a" stroke-width="0.5" opacity="0.3"/>
+  <text x="20" y="36" font-family="monospace" font-size="9" fill="#6b6560">CONTACT SHEET · 001</text>
+  <circle cx="160" cy="200" r="48" stroke="#0a0a0a" stroke-width="0.75" fill="none" opacity="0.2"/>
+  <line x1="112" y1="200" x2="208" y2="200" stroke="#0a0a0a" stroke-width="0.5" opacity="0.15"/>
+  <line x1="160" y1="152" x2="160" y2="248" stroke="#0a0a0a" stroke-width="0.5" opacity="0.15"/>
+  <text x="20" y="380" font-family="monospace" font-size="8" fill="#6b6560">f/2.8 · 1/250s · ISO 400</text>
+  <text x="200" y="380" font-family="monospace" font-size="8" fill="#6b6560" text-anchor="end">35mm</text>
+</svg>

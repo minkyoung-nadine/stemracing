@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garage — STEM Racing</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/garage.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.svg" alt="Team logo" width="120" height="32">
+        <span class="logo-text">YOUR TEAM</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">홈</a>
+        <a href="team.html" data-i18n="nav.team">팀</a>
+        <a href="sponsors.html" data-i18n="nav.sponsors">스폰서</a>
+        <a href="car.html" data-i18n="nav.car">차량</a>
+        <a href="garage.html" data-i18n="nav.garage">3D</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" data-lang="ko">
+          <span class="lang-toggle__indicator" aria-hidden="true"></span>
+          <button type="button" data-lang-btn="ko" class="is-active">KO</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-num" data-i18n="garage.section">03 — GARAGE</p>
+        <h1 data-i18n="garage.title">3D 뷰어</h1>
+        <p class="subtitle" data-i18n="garage.subtitle">프리셋 뷰와 부품 하이라이트. car.glb가 있으면 자동 로드됩니다.</p>
+      </div>
+    </header>
+
+    <div class="container garage-layout">
+      <div class="garage-canvas-wrap">
+        <canvas id="garage-canvas"></canvas>
+        <span class="canvas-label" data-i18n="garage.canvasHint">DRAG TO ORBIT · SCROLL TO ZOOM</span>
+      </div>
+      <aside class="garage-controls">
+        <div>
+          <span class="label" data-i18n="garage.views">뷰</span>
+          <div class="btn-group">
+            <button type="button" class="btn-preset" data-view="front" data-i18n="garage.view.front">정면</button>
+            <button type="button" class="btn-preset" data-view="side" data-i18n="garage.view.side">측면</button>
+            <button type="button" class="btn-preset" data-view="top" data-i18n="garage.view.top">상단</button>
+            <button type="button" class="btn-preset is-active" data-view="iso" data-i18n="garage.view.iso">아이소</button>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn-toggle" id="btn-wireframe" data-i18n="garage.wireframe">와이어프레임</button>
+          <button type="button" class="btn-toggle" id="btn-autorotate" data-i18n="garage.autorotate">자동 회전</button>
+        </div>
+        <div class="garage-callouts">
+          <span class="label" data-i18n="garage.parts">부품</span>
+          <div id="callout-list" class="callout-list"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-meta" data-i18n="footer.tagline">F1 in Schools · STEM Racing</p>
+        <p class="footer-meta"><span data-i18n="footer.build">BUILD NO.</span> 026 · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <span class="footer-stamp">INSPECTED</span>
+    </div>
+  </footer>
+
+  <script src="assets/data/i18n.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script type="module" src="assets/js/garage.js"></script>
+</body>
+</html>

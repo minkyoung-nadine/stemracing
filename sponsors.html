@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsors — STEM Racing</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/sponsors.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.svg" alt="Team logo" width="120" height="32">
+        <span class="logo-text">YOUR TEAM</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">홈</a>
+        <a href="team.html" data-i18n="nav.team">팀</a>
+        <a href="sponsors.html" data-i18n="nav.sponsors">스폰서</a>
+        <a href="car.html" data-i18n="nav.car">차량</a>
+        <a href="garage.html" data-i18n="nav.garage">3D</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" data-lang="ko">
+          <span class="lang-toggle__indicator" aria-hidden="true"></span>
+          <button type="button" data-lang-btn="ko" class="is-active">KO</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-num" data-i18n="sponsors.section">PARTNERS</p>
+        <h1 data-i18n="sponsors.title">스폰서</h1>
+        <p class="subtitle" data-i18n="sponsors.subtitle">sponsors.js에 항목을 추가하면 자동으로 표시됩니다.</p>
+      </div>
+    </header>
+
+    <div class="container sponsors-content">
+      <section class="sponsor-tier is-hidden" data-tier="title">
+        <h2 class="sponsor-tier__title" data-i18n="sponsors.tier.title">TITLE PARTNER</h2>
+        <div class="sponsor-tier__grid"></div>
+      </section>
+      <section class="sponsor-tier is-hidden" data-tier="premier">
+        <h2 class="sponsor-tier__title" data-i18n="sponsors.tier.premier">PREMIER</h2>
+        <div class="sponsor-tier__grid"></div>
+      </section>
+      <section class="sponsor-tier is-hidden" data-tier="supporter">
+        <h2 class="sponsor-tier__title" data-i18n="sponsors.tier.supporter">SUPPORTERS</h2>
+        <div class="sponsor-tier__grid"></div>
+      </section>
+      <section class="sponsor-tier is-hidden" data-tier="inkind">
+        <h2 class="sponsor-tier__title" data-i18n="sponsors.tier.inkind">IN-KIND</h2>
+        <div class="sponsor-tier__grid"></div>
+      </section>
+
+      <aside class="partner-cta">
+        <h2 data-i18n="sponsors.cta.title">파트너가 되어 주세요</h2>
+        <p data-i18n="sponsors.cta.body">후원·협력 문의는 아래로 연락해 주세요.</p>
+        <p><a href="mailto:sponsor@yourteam.example" data-i18n="sponsors.cta.email">sponsor@yourteam.example</a></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-meta" data-i18n="footer.tagline">F1 in Schools · STEM Racing</p>
+        <p class="footer-meta"><span data-i18n="footer.build">BUILD NO.</span> 026 · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <span class="footer-stamp">INSPECTED</span>
+    </div>
+  </footer>
+
+  <script src="assets/data/i18n.js"></script>
+  <script src="assets/data/sponsors.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/sponsors-render.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team — STEM Racing</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/team.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.svg" alt="Team logo" width="120" height="32">
+        <span class="logo-text">YOUR TEAM</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">홈</a>
+        <a href="team.html" data-i18n="nav.team">팀</a>
+        <a href="sponsors.html" data-i18n="nav.sponsors">스폰서</a>
+        <a href="car.html" data-i18n="nav.car">차량</a>
+        <a href="garage.html" data-i18n="nav.garage">3D</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" data-lang="ko">
+          <span class="lang-toggle__indicator" aria-hidden="true"></span>
+          <button type="button" data-lang-btn="ko" class="is-active">KO</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-num" data-i18n="team.section">01 — THE CREW</p>
+        <h1 data-i18n="team.title">팀 소개</h1>
+        <p class="subtitle" data-i18n="team.subtitle">역할별 책임과 사용 도구. 카드 데이터는 team.js에서 수정합니다.</p>
+      </div>
+    </header>
+    <div class="container">
+      <div id="crew-grid" class="crew-grid" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-meta" data-i18n="footer.tagline">F1 in Schools · STEM Racing</p>
+        <p class="footer-meta"><span data-i18n="footer.build">BUILD NO.</span> 026 · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <span class="footer-stamp">INSPECTED</span>
+    </div>
+  </footer>
+
+  <script src="assets/data/i18n.js"></script>
+  <script src="assets/data/team.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/team-render.js"></script>
+</body>
+</html>

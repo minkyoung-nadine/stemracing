@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car — STEM Racing</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/car.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.svg" alt="Team logo" width="120" height="32">
+        <span class="logo-text">YOUR TEAM</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">홈</a>
+        <a href="team.html" data-i18n="nav.team">팀</a>
+        <a href="sponsors.html" data-i18n="nav.sponsors">스폰서</a>
+        <a href="car.html" data-i18n="nav.car">차량</a>
+        <a href="garage.html" data-i18n="nav.garage">3D</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" data-lang="ko">
+          <span class="lang-toggle__indicator" aria-hidden="true"></span>
+          <button type="button" data-lang-btn="ko" class="is-active">KO</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-num" data-i18n="car.section">02 — THE CAR</p>
+        <h1 data-i18n="car.title">차량</h1>
+        <p class="subtitle" data-i18n="car.subtitle">스펙 시트와 엔지니어링 일지. 수치는 실제 측정값으로 교체하세요.</p>
+      </div>
+    </header>
+
+    <div class="container car-layout">
+      <div class="blueprint-wrap">
+        <svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" aria-label="Side elevation blueprint">
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0a0a0a" stroke-width="0.25" opacity="0.08"/>
+            </pattern>
+          </defs>
+          <rect width="520" height="200" fill="url(#grid)"/>
+          <!-- Ground line -->
+          <line x1="40" y1="150" x2="480" y2="150" stroke="#0a0a0a" stroke-width="0.75" opacity="0.4"/>
+          <!-- Wheelbase dimension -->
+          <line x1="120" y1="165" x2="380" y2="165" stroke="#d72638" stroke-width="0.5"/>
+          <text x="250" y="178" font-family="monospace" font-size="8" fill="#d72638" text-anchor="middle">160 mm WB</text>
+          <!-- Body outline -->
+          <path d="M 95 148 L 110 130 L 200 118 L 320 115 L 400 118 L 430 125 L 445 148 Z" fill="none" stroke="#0a0a0a" stroke-width="1.2"/>
+          <!-- Nose -->
+          <path d="M 400 118 L 445 125 L 455 148 L 430 148 L 400 118" fill="none" stroke="#0a0a0a" stroke-width="0.8"/>
+          <!-- Front wing -->
+          <line x1="448" y1="152" x2="468" y2="152" stroke="#0a0a0a" stroke-width="1"/>
+          <line x1="450" y1="140" x2="450" y2="152" stroke="#0a0a0a" stroke-width="0.5"/>
+          <!-- Rear wing -->
+          <line x1="95" y1="115" x2="95" y2="95" stroke="#0a0a0a" stroke-width="0.8"/>
+          <line x1="80" y1="95" x2="110" y2="95" stroke="#0a0a0a" stroke-width="0.8"/>
+          <!-- Wheels -->
+          <circle cx="130" cy="148" r="14" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+          <circle cx="370" cy="148" r="14" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+          <!-- CoG marker -->
+          <circle cx="240" cy="128" r="3" fill="#d72638"/>
+          <text x="248" y="132" font-family="monospace" font-size="7" fill="#d72638">CoG</text>
+          <!-- Dimension ticks -->
+          <line x1="455" y1="148" x2="455" y2="100" stroke="#6b6560" stroke-width="0.4" stroke-dasharray="2 2"/>
+          <text x="462" y="120" font-family="monospace" font-size="7" fill="#6b6560">L 210</text>
+        </svg>
+      </div>
+
+      <div>
+        <h2 class="label" style="margin-bottom: 1rem;" data-i18n="car.spec.title">스펙 시트</h2>
+        <table class="spec-sheet">
+          <tbody>
+            <tr>
+              <th data-i18n="car.spec.wheelbase">휠베이스</th>
+              <td>160 mm</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.length">전장</th>
+              <td>210 mm</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.mass">질량</th>
+              <td>55 g</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.cog">무게중심 (CoG)</th>
+              <td>42% front · 18 mm height</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.cd">항력계수 Cd</th>
+              <td>0.32 (wind tunnel)</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.frontWing">프론트 윙 면적</th>
+              <td>18 cm²</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.rearWing">리어 윙 면적</th>
+              <td>12 cm²</td>
+            </tr>
+            <tr>
+              <th data-i18n="car.spec.material">차체 재질</th>
+              <td>ABS · balsa core</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <section class="container engineering-log">
+      <h2 class="font-display" style="font-size: 1.5rem; margin-bottom: 1.5rem;" data-i18n="car.log.title">엔지니어링 일지</h2>
+      <article class="log-entry">
+        <h3 data-i18n="car.log.1.title">CFD — 프론트 윙 스톨 각</h3>
+        <p class="log-meta" data-i18n="car.log.1.meta">작성: DE · 2026-03-01</p>
+        <p data-i18n="car.log.1.body">40m/s 기준으로 스톨이 14° 근처에서 시작됐다. 레이스 속도 구간에서는 11°로 고정하고, 엔드플레이트 높이만 1.5mm 올려 유도 난류를 줄였다.</p>
+      </article>
+      <article class="log-entry">
+        <h3 data-i18n="car.log.2.title">경량화 — 사이드포드 립</h3>
+        <p class="log-meta" data-i18n="car.log.2.meta">작성: MFG · 2026-02-20</p>
+        <p data-i18n="car.log.2.body">ABS 출력물에서 립 두께를 0.8mm까지 내렸는데, 프레스 시 균열이 났다. 최종은 1.0mm + 리브 2개 추가로 타협했다. 절감은 3.1g.</p>
+      </article>
+      <article class="log-entry">
+        <h3 data-i18n="car.log.3.title">에어로 밸런스</h3>
+        <p class="log-meta" data-i18n="car.log.3.meta">작성: TP · 2026-02-05</p>
+        <p data-i18n="car.log.3.body">CoG를 12mm 앞으로 당기면서 리어 윙 각도를 1° 줄였다. 직선 속도는 0.3% 떨어졌지만 코너 exit 속도가 나아서 유지하기로 했다.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-meta" data-i18n="footer.tagline">F1 in Schools · STEM Racing</p>
+        <p class="footer-meta"><span data-i18n="footer.build">BUILD NO.</span> 026 · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <span class="footer-stamp">INSPECTED</span>
+    </div>
+  </footer>
+
+  <script src="assets/data/i18n.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
